@@ -7,12 +7,14 @@ use App\Filament\Resources\SubCategoryResource\RelationManagers;
 use App\Models\SubCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Notifications\Notification;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class SubCategoryResource extends Resource
 {
@@ -38,6 +40,20 @@ class SubCategoryResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('name_tr')
                     ->label('Kategori Adı (TR)')
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(function (string $operation, $state, Set $set) {
+                        if ($operation !== 'create') {
+                            return;
+                        }
+                        $set('slug', Str::slug($state));
+                    })
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('slug')
+                    ->label('Slug')
+                    ->disabled()
+                    ->dehydrated()
+                    ->unique(SubCategory::class, 'slug', ignoreRecord: true)
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('name_en')

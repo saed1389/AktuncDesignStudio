@@ -67,7 +67,7 @@ class ProjectResource extends Resource
                     })
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
-                    ->label('Proje Adı (TR)')
+                    ->label('Slug')
                     ->disabled()
                     ->dehydrated()
                     ->unique(Project::class, 'slug', ignoreRecord: true)

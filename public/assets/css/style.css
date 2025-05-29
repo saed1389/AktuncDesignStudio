@@ -1,59 +1,3 @@
-/* -----------------------------------------------------------------------------------
-
- 01. Google fonts
- 02. Basics style
- 03. Helper style - [NEW] 
- 04. Selection style 
- 05. Owl-Theme custom style
- 06. Section style
- 07. Navbar style
- 08. Header style
- 09. Slider style
- 10. Slider Left Panel style
- 11. Page Banner Header style
- 12. Content Lines style
- 13. Video Background - [NEW] 
- 14. About style 
- 15. Team style
- 16. Team Details style
- 17. Careers style - [NEW] 
- 18. Services style
- 19. Services2 style - [NEW]
- 20. Services3 style - [NEW]
- 21. Services4 style - [NEW]
- 22. Projects style
- 23. Projects2 (masonry) style
- 24. Projects3 style
- 25. Projects4 style
- 26. Project Gallery style
- 27. Project Page style - [NEW] 
- 28. Clients style
- 29. Gallery style
- 30. Promo Video and Testimonials style
- 31. Blog 1 style
- 32. Blog 2 style
- 33. Blog 3 style
- 34. Blog 4 style - [NEW] 
- 35. Post style
- 36. Contact style
- 37. Buttons style
- 38. Footer style
- 39. Corner style
- 40. Preloader style
- 41. toTop Button style
- 42. Accordion Box (for Faqs) style
- 43. Pricing plan style
- 44. Error Page - 404 style
- 45. Process style
- 46. Process 2 style - [NEW] 
- 47. Comming soon style
- 48. Overlay Effect Bg image style - [NEW]
- 50. Responsive (Media Query)
- 
------------------------------------------------------------------------------------ */
-
-
-/* ======= Google fonts (Oswald & Gothic) ======= */
 @font-face {
     font-family: 'Century Gothic';
     src: url('../fonts/gothic.ttf');
@@ -313,7 +257,7 @@ blockquote cite:before {
     bottom: 5px;
     width: 45px;
     height: 1px;
-    border-top: 1px solid; 
+    border-top: 1px solid;
     border-color:inherit;
     color: #58585a;
 }
@@ -1358,7 +1302,7 @@ blockquote cite:before {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px
-    
+
 }
 .team-details .content .info-list .list-description {
     display: inline
@@ -1744,7 +1688,7 @@ blockquote cite:before {
         padding: 25px 0
     }
     .services2 .services2-text {
-  
+
     }
 }
 
@@ -2237,7 +2181,7 @@ blockquote cite:before {
   .projects-prev-next {
     text-align: center;
   }
-    
+
   .projects-prev-next-left {
         margin-bottom: 10px;
     }
@@ -2675,7 +2619,7 @@ blockquote cite:before {
           transition-delay: .15s;
 }
 .gallery-masonry-wrapper .gallery-masonry-item-content {
-    
+
   position: absolute;
   left: 0;
   bottom: -11px;
@@ -2728,7 +2672,7 @@ blockquote cite:before {
     margin-left: auto;
     margin-right: auto;
   }
-    
+
      .bauen-gallery-items .col-md-6:nth-child(2) {
         margin-top: 0;
     }
@@ -2744,7 +2688,7 @@ blockquote cite:before {
     .bauen-gallery-items .single-item {
         padding-bottom: 30px;
     }
- 
+
 }
 @media only screen and (max-width: 400px) {
   .gallery-masonry-wrapper {
@@ -2781,7 +2725,7 @@ blockquote cite:before {
 }
 @media (max-width: 576px) {
     .project-bar {
-     margin-top: 0px; 
+     margin-top: 0px;
     }
 }
 /* page list */
@@ -3264,7 +3208,7 @@ button.mfp-arrow {
   left: 0px;
 }
 .bauen-blog2 .content .cont .more:hover {
-   color: #000; 
+   color: #000;
 }
 .bauen-blog2 .content .info h6 {
     font-size: 11px;
@@ -3293,7 +3237,7 @@ button.mfp-arrow {
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .bauen-blog2 .content {
@@ -4476,7 +4420,7 @@ hr.border-2 {
 }
 .process2.item .icon {
     margin-bottom: 15px;
-    font-size: 40px; 
+    font-size: 40px;
     color: #58585a;
 }
 .process2.item i.number {
@@ -4954,7 +4898,7 @@ hr.border-2 {
     .header .caption .butn-light {
         margin-right: 10px;
     }
-	
+
     .portfolio .filtering span {
         margin-bottom: 10px;
     }

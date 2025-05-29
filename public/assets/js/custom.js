@@ -1,37 +1,9 @@
-/* ----------------------------------------------------------------
-
-[ Custom settings ]
-
-01. ScrollIt
-02. Navbar scrolling background
-03. Close navbar-collapse when a  clicked
-04. Sections background image from data background 
-05. Isotope active
-06. Animations
-07. YouTubePopUp
-08. Testimonials owlCarousel
-09. Projects owlCarousel
-10. Project Page owlCarousel - NEW
-11. Blog owlCarousel
-12. Team owlCarousel
-13. Clients owlCarousel
-14. Services owlCarousel
-15. Team owlCarousel
-16. MagnificPopup (Image, Youtube, Vimeo and custom popup)
-17. Scroll back to top
-18. Slider
-19. Accordion Box
-20. Preloader
-21. Contact Form
-
-------------------------------------------------------------------- */
-
 $(function() {
-    
+
     "use strict";
-    
+
     var wind = $(window);
-    
+
     // ScrollIt
     $.scrollIt({
       upKey: 38,                // key code to navigate to the next section
@@ -42,7 +14,7 @@ $(function() {
       onPageChange: null,       // function(pageIndex) that is called when page is changed
       topOffset: -70            // offste (in px) for fixed top navigation
     });
-    
+
     // Navbar scrolling background
     wind.on("scroll",function () {
         var bodyScroll = wind.scrollTop(),
@@ -56,12 +28,12 @@ $(function() {
             logo.attr('src', 'img/logo.png');
         }
     });
-    
+
     // Close navbar-collapse when a  clicked
     $(".navbar-nav .dropdown-item a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
-    
+
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
@@ -69,7 +41,7 @@ $(function() {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-    
+
     // Isotope Active
 	$('.bauen-project-items').imagesLoaded(function () {
 		// Add isotope on click filter function
@@ -152,10 +124,10 @@ $(function() {
     $(function () {
         contentWayPoint();
     });
-    
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
-    
+
     // Testimonials owlCarousel
     $('.testimonials .owl-carousel').owlCarousel({
         loop:true,
@@ -178,7 +150,7 @@ $(function() {
             }
         }
     });
-    
+
     // Projects owlCarousel
     $('.projects .owl-carousel').owlCarousel({
         loop: true
@@ -200,8 +172,8 @@ $(function() {
             }
         }
     });
-    
-    
+
+
     // Project Page owlCarousel
     $('.project-page .owl-carousel').owlCarousel({
         loop: true
@@ -224,8 +196,8 @@ $(function() {
             }
         }
     });
-    
-    
+
+
     // Blog owlCarousel
     $('.bauen-blog .owl-carousel').owlCarousel({
         loop: true
@@ -246,7 +218,7 @@ $(function() {
             }
         }
     });
-    
+
 
     // Team owlCarousel
     $('.team .owl-carousel').owlCarousel({
@@ -269,7 +241,7 @@ $(function() {
             }
         }
     });
-    
+
     // Clients owlCarousel
     $('.clients .owl-carousel').owlCarousel({
         loop: true
@@ -291,7 +263,7 @@ $(function() {
             }
         }
     });
-    
+
     //  Scroll back to top
     var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
@@ -322,10 +294,10 @@ $(function() {
         jQuery('html, body').animate({ scrollTop: 0 }, duration);
         return false;
     })
-    
+
 });
 
-// Slider 
+// Slider
 $(document).ready(function() {
     var owl = $('.header .owl-carousel');
     // Slider owlCarousel
@@ -429,4 +401,3 @@ Pace.on('done', function() {
         .done(done_func)
         .fail(fail_func);
     });
-    
