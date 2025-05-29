@@ -8,6 +8,9 @@ class AboutPage extends Component
 {
     public function render()
     {
-        return view('livewire.about-page');
+        $setting = getSetting();
+        return view('livewire.about-page', [
+            'setting' => $setting,
+        ]);
     }
 }

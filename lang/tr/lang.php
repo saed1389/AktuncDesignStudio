@@ -12,5 +12,6 @@ return [
     'Close' => 'Kapat',
     'Search' => 'Ara',
     'Type the project you want to search here' => 'Aramak istediğiniz projeyi buraya yazın',
-
+    'Mission' => 'Misyon',
+    'Vision' => 'Vizyon',
 ];

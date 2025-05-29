@@ -12,5 +12,6 @@ return [
     'Close' => 'Close',
     'Search' => 'Search',
     'Type the project you want to search here' => 'Type the project you want to search here',
-
+    'Mission' => 'Mission',
+    'Vision' => 'Vision',
 ];

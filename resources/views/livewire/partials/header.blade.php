@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="/">{{ __('lang.Home') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="/hakkimizda">{{ __('lang.About us') }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">{{ __('lang.About us') }}</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link " href="">{{ __('lang.Projects') }}</a>
                     @if($categories->count() > 0)

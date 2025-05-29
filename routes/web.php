@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AboutPage;
 use App\Livewire\HomePage;
 use Illuminate\Support\Facades\Route;
 
@@ -11,3 +12,4 @@ Route::get('/change-locale/{locale}', function ($locale) {
 });
 
 Route::get('/', HomePage::class);
+Route::get('/hakkimizda', AboutPage::class)->name('about');
