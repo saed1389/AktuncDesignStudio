@@ -19,5 +19,6 @@ return [
     'Project Area' => 'Proje Alanı',
     'Project Location' => 'Proje Bölgesi',
     'Project Customer' => 'Proje Müşterisi',
-    'Project' => 'Proje'
+    'Project' => 'Proje',
+    'Our Team' => 'Ekibimiz'
 ];

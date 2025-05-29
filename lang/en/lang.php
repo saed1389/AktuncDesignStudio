@@ -20,4 +20,5 @@ return [
     'Project Location' => 'Project Location',
     'Project Customer' => 'Project Customer',
     'Project' => 'Project',
+    'Our Team' => 'Our Team',
 ];

@@ -22,7 +22,7 @@
                         </ul>
                     @endif
                 </li>
-                <li class="nav-item"><a class="nav-link {{ Request::segment(1) == '' ? '' : 'nav-color' }}" href="/proje-ekibi">{{ __('lang.Project Team') }}</a></li>
+                <li class="nav-item"><a class="nav-link {{ Request::segment(1) == '' ? '' : 'nav-color' }}" href="{{ route('team') }}">{{ __('lang.Project Team') }}</a></li>
                 <li class="nav-item"><a class="nav-link {{ Request::segment(1) == '' ? '' : 'nav-color' }}" href="/bize-ulasin">{{ __('lang.Contact us') }}</a></li>
                 <li class="nav-item lang-flag" style="display: {{ app()->getLocale() == 'en' ? 'none' : 'block' }}"><a class="nav-link" href="{{ url('/change-locale/en') }}">EN</a></li>
                 <li class="nav-item lang-flag" style="display: {{ app()->getLocale() == 'tr' ? 'none' : 'block' }}"><a class="nav-link" href="{{ url('/change-locale/tr') }}">TR</a></li>

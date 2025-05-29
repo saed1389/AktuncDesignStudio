@@ -2,12 +2,16 @@
 
 namespace App\Livewire;
 
+use App\Models\Team;
 use Livewire\Component;
 
 class TeamPage extends Component
 {
     public function render()
     {
-        return view('livewire.team-page');
+        $teams = Team::where('status', 1)->get();
+        return view('livewire.team-page', [
+            'teams' => $teams,
+        ]);
     }
 }
