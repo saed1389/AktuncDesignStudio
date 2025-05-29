@@ -14,4 +14,10 @@ return [
     'Type the project you want to search here' => 'Aramak istediğiniz projeyi buraya yazın',
     'Mission' => 'Misyon',
     'Vision' => 'Vizyon',
+    'All' => 'Tümü',
+    'Project Year' => 'Proje Yılı',
+    'Project Area' => 'Proje Alanı',
+    'Project Location' => 'Proje Bölgesi',
+    'Project Customer' => 'Proje Müşterisi',
+    'Project' => 'Proje'
 ];

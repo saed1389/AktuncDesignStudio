@@ -14,4 +14,10 @@ return [
     'Type the project you want to search here' => 'Type the project you want to search here',
     'Mission' => 'Mission',
     'Vision' => 'Vision',
+    'All' => 'All',
+    'Project Year' => 'Project Year',
+    'Project Area' => 'Project Area',
+    'Project Location' => 'Project Location',
+    'Project Customer' => 'Project Customer',
+    'Project' => 'Project',
 ];
