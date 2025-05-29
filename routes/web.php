@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\AboutPage;
+use App\Livewire\ContactPage;
 use App\Livewire\HomePage;
 use App\Livewire\ProjectDetailPage;
 use App\Livewire\ProjectPage;
@@ -19,3 +20,4 @@ Route::get('/hakkimizda', AboutPage::class)->name('about');
 Route::get('/projeler/{slug}', ProjectPage::class)->name('projects');
 Route::get('/proje-detay/{slug}', ProjectDetailPage::class)->name('project-detail');
 Route::get('/proje-ekibi', TeamPage::class)->name('team');
+Route::get('/iletisim', ContactPage::class)->name('contact');

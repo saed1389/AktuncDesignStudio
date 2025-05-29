@@ -21,4 +21,10 @@ return [
     'Project Customer' => 'Project Customer',
     'Project' => 'Project',
     'Our Team' => 'Our Team',
+    'Contact Information' => 'Contact Information',
+    'Contact Form' => 'Contact Form',
+    'Your message was sent successfully' => 'Your message was sent successfully',
+    'Name Surname' => 'Name Surname',
+    'Message' => 'Message',
+    'Send Form' => 'Send Form',
 ];

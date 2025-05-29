@@ -20,5 +20,11 @@ return [
     'Project Location' => 'Proje Bölgesi',
     'Project Customer' => 'Proje Müşterisi',
     'Project' => 'Proje',
-    'Our Team' => 'Ekibimiz'
+    'Our Team' => 'Ekibimiz',
+    'Contact Information' => 'İletişim Bilgileri',
+    'Contact Form' => 'İletişim Formu',
+    'Your message was sent successfully' => 'Mesajınız başarıyla gönderildi',
+    'Name Surname' => 'İsim Soyismi',
+    'Message' => 'Mesaj',
+    'Send Form' => 'Formu Gönder'
 ];
