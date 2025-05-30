@@ -62,7 +62,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="/proje-arama" method="POST">
+                    <form >
                         <div class="form-group">
                             <input type="search" class="form-control" name="search" placeholder="{{ __('lang.Type the project you want to search here') }}">
                         </div>

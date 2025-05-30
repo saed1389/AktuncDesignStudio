@@ -62,6 +62,7 @@ class SliderResource extends Resource
     {
         return $table
             ->reorderable('sort_order')
+            ->defaultSort('sort_order')
             ->columns([
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('name_tr')

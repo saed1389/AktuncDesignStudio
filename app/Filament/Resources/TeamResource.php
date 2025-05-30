@@ -65,6 +65,7 @@ class TeamResource extends Resource
     {
         return $table
             ->reorderable('sort_order')
+            ->defaultSort('sort_order')
             ->columns([
                 Tables\Columns\ImageColumn::make('image')
                     ->label('Resim'),
@@ -83,6 +84,8 @@ class TeamResource extends Resource
                             ->success()
                             ->send();
                     }),
+                Tables\Columns\TextColumn::make('sort_order')
+                    ->label('Sıralama Düzeni'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Oluşturuldu')
                     ->dateTime()
